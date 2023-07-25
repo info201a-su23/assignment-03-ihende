@@ -17,9 +17,17 @@ Before actually calculating the total number of COVID cases and deaths, record y
 
 Guess: How many total COVID cases do you think there have been in the U.S.?
 
+**50 million**
+
 Guess: How many total COVID-related deaths do you think there have been in the U.S.?
 
+**1.5 million**
+
 Guess: Which state do you think has the highest number of COVID cases, and which state do you think has the lowest?
+
+**Highest: New York**
+
+**Lowest: Alaska**
 
 ## Reflection 2
 Did the number of COVID cases and deaths surprise you? Why or why not? What about the states with the highest and lowest number of cases? How did your guesses line up with the actual results? Answer in at least 1-3 sentences
