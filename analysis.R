@@ -10,35 +10,36 @@
 # NOTE: You will often be asked to pull() specific values from your analysis.
 
 # 1.a Load the tidyverse package and the dplyr package
-
+install.packages("tidyverse")
+library("tidyverse")
 
 # 1.b Load the *national level* data from the following URL into a variable
 # called `national`
 # https://github.com/melaniewalsh/Neat-Datasets/raw/main/us-national-covid-2023.csv
-national <- NULL
-
+national <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/raw/main/us-national-covid-2023.csv")
+View(national)
 # 1.c Load the *state level* data from the following URL into a variable called
 # `states`
 # https://github.com/melaniewalsh/Neat-Datasets/raw/main/us-states-covid-2023.csv
-states <- NULL
-
+states <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/raw/main/us-states-covid-2023.csv")
+View(states)
 # 1.d Load the *county level* data from the following URL into a variable called
 # `counties`
 # NOTE: This is a large dataset. It may take 30-60 seconds to load.
 # https://github.com/melaniewalsh/Neat-Datasets/raw/main/us-counties-covid-2023.csv
-counties <- NULL
-
+counties <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/raw/main/us-counties-covid-2023.csv")
+View(counties)
 # 1.e How many observations (rows) are in each dataset?
 # Create `obs_national`, `obs_states`, `obs_counties`
-obs_national <- NULL
-obs_states <- NULL
-obs_counties <- NULL
+obs_national <- nrow(national)
+obs_states <- nrow(states)
+obs_counties <- nrow(counties)
 
 # 1.f How many features (columns) are there in each dataset?
 # Create `num_features_national`, `num_features_states`, `num_features_counties`
-num_features_national <- NULL
-num_features_states <- NULL
-num_features_counties <- NULL
+num_features_national <- ncol(national)
+num_features_states <- ncol(states)
+num_features_counties <- ncol(counties)
 
 
 # 2 Exploratory Analysis ----------------------------------------------------
