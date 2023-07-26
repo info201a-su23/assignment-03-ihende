@@ -32,6 +32,8 @@ Guess: Which state do you think has the highest number of COVID cases, and which
 ## Reflection 2
 Did the number of COVID cases and deaths surprise you? Why or why not? What about the states with the highest and lowest number of cases? How did your guesses line up with the actual results? Answer in at least 1-3 sentences
 
+**I was surprised by the number of cases because I didn't realize about a third of the country has experienced COVID. I was not surprised by the number of deaths because I remember when the U.S. hit 1 million deaths around when COVID was on the decline. My guess for the state with the highest number of cases was correct, which isn't surprising because California is the most populated state. However, for the state with fewest cases I was wrong because I didn't consider U.S. territories.**
+
 ## Reflection 3
 Which county has the highest number of cases in the state of Washington, and does it surprise you? Why or why not? (You may need to google this county to learn about it) Answer at least in 1-3 sentences
 
