@@ -47,9 +47,15 @@ Why are there so many observations (counties) in the variable `lowest_deaths_in_
 ## Reflection 5
 What do you think about the number and scale of the inconsistencies in the data? Does the fact that there are inconsistencies mean that people should not use this data? Why or why not? Answer in at least 1-3 sentences
 
+**I am not surprised that there are some inconsistencies in the data, as estimating a total number of COVID cases for the whole country vs. for just one county probably has wildly different methodology. This data also includes large amounts of statistics and numbers on something that is hard to estimate. However, because of the size of the dataset I still think this is a valid source to use on COVID data as it still can capture general trends.**
+
 
 ## Reflection 6
 Why were you interested in this particular question? Were you able to answer your question with code? What did you learn? Answer in at least 1-3 sentences
 
+**While I could predict that there would be several answers, I was still interested in what my code would tell me. The lowest possible number of cases is 0, and there are certainly some counties without reported data or isolated communities that never encountered COVID. I learned that there are several counties that are considered "unknown" and I'm curious about that missing data.**
+
 ## Reflection 7
 What, if anything, made you curious about this COVID analysis? What, if anything, surprised you? What might you do the same or differently on your next data wrangling project? Answer in at least 1-3 sentences
+
+**This analysis made me curious about the trends between individual states/counties in terms of COVID cases and deaths. For example, when I learned Yakima County had the most COVID cases I was surprised, However, the more I thought about it the more I realized that Yakima County may have more republican leaders. COVID soon became a political issue and political divides became apparent in this way. Next time I do a data wrangling project, I'd try to find connections between the tables I'm making instead of viewing them individually (states vs. counties vs. national)**

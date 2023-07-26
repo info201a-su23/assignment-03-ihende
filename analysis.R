@@ -226,20 +226,24 @@ lowest_deaths_in_each_state <- counties %>%
 # 4.a Create a `total_cases_counties` dataframe that adds up all the COIVD cases
 # for all the counties for every date in the counties dataframe.
 # You should name the columns `date` and `county_total_cases`.
-total_cases_counties <- NULL
+total_cases_counties <- counties %>%
+  group_by(date) %>%
+  summarize(county_total_cases = sum(cases))
 
 # 4.b Join `total_cases_counties` with the `national` dataframe.
 # Save this dataframe as `all_totals`.
-all_totals <- NULL
+all_totals <- right_join(national, total_cases_counties, by = "date")
 
 # 4.c Filter the all_totals dataframe to find only the rows where the
 # "county_total_cases" column does not match the "cases" column
 # Save as national_county_diff
-national_county_diff <- NULL
+national_county_diff <- all_totals %>%
+  mutate(difference = cases != county_total_cases) %>%
+  filter(difference == "TRUE")
 
 # 4.d Calculate the number of rows in the national_county_diff dataframe
 # Save as num_national_county_diff
-num_national_county_diff <- NULL
+num_national_county_diff <- nrow(national_county_diff)
 
 # Reflection 5 (answer in README.md file)
 # What do you think about the number and scale of the inconsistencies in the
@@ -253,11 +257,13 @@ num_national_county_diff <- NULL
 # about this COVID data, and then write code to answer it (at least 2-3 lines)
 
 # QUESTION:  Write your question in English language words here
-#
+# Which county had this lowest number of cases?
 #
 
 #  Write code (at least 2-3 lines) that will answer your question
-my_answer <- NULL
+county_lowest_cases <- counties %>%
+  filter(cases == min(cases)) %>%
+  pull(county)
 
 # Reflection 6 (answer in README.md file)
 # Why were you interested in this particular question? Were you able to answer
@@ -272,3 +278,4 @@ my_answer <- NULL
 
 # Congrats! You're finished. Don't forget to save, push all changes to GitHub,
 # and submit the link to your repository on Canvas!
+
