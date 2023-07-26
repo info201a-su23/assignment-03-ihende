@@ -180,6 +180,11 @@ plot(national$new_deaths)
 # of cases and corresponding rows (hint: you will need to use a grouping
 # operation and a filter)
 # Save as `highest_cases_in_each_state`
+highest_cases_in_each_state <- counties %>%
+  filter(date == max(date, na.rm = TRUE)) %>%
+  group_by(state) %>%
+  summarize(highest_county = max(location, na.rm = TRUE))
+View(highest_cases_in_each_state)
 
 # Reflection 3 (answer in README.md file)
 # Inspect the `highest_cases_in_each_state` dataframe
@@ -193,6 +198,11 @@ plot(national$new_deaths)
 # deaths and corresponding rows (hint: you will need to use a grouping operation
 # and a filter)
 # Save as `lowest_deaths_in_each_state`
+lowest_deaths_in_each_state <- counties %>%
+  filter(date == max(date, na.rm = TRUE)) %>%
+  group_by(state) %>%
+  filter(deaths == min(deaths)) %>%
+  pull(location)
 
 # Reflection 4 (answer in README.md file)
 # Why are there so many counties in `lowest_deaths_in_each_state`? That is,

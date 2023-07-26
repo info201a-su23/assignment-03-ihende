@@ -37,9 +37,12 @@ Did the number of COVID cases and deaths surprise you? Why or why not? What abou
 ## Reflection 3
 Which county has the highest number of cases in the state of Washington, and does it surprise you? Why or why not? (You may need to google this county to learn about it) Answer at least in 1-3 sentences
 
+**Yakima County has the highest number of cases in the state of Washington. This did surprise me, because I thought it would be King County, where Seattle is located. I also thought this because that would mean King County is more densely populated. However, I understand that Yakima may have been more conservative when it came to COVID measures and vaccines.**
+
 ## Reflection 4
 Why are there so many observations (counties) in the variable `lowest_deaths_in_each_state`? That is, wouldn't you expect the number to be around 50? Why is the number greater than 50? Answer in at least 1-3 sentences
 
+**The dataframe "lowest_deaths_in_each_state" chooses the county with the lowest death from each state. But like I mentioned previously, this data also considers territories like American Samoa, so the number of observations will exceed just the 50 states.**
 
 ## Reflection 5
 What do you think about the number and scale of the inconsistencies in the data? Does the fact that there are inconsistencies mean that people should not use this data? Why or why not? Answer in at least 1-3 sentences
