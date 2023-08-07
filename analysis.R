@@ -10,7 +10,6 @@
 # NOTE: You will often be asked to pull() specific values from your analysis.
 
 # 1.a Load the tidyverse package and the dplyr package
-install.packages("tidyverse")
 library("tidyverse")
 
 # 1.b Load the *national level* data from the following URL into a variable
@@ -56,7 +55,6 @@ num_features_counties <- ncol(counties)
 # 2.a How many total COVID cases have there been in the U.S. by the most recent
 # date in the dataset? Make sure to pull() this number `total_us_cases`
 total_us_cases <- national %>%
-  filter(cases == max(cases, na.rm = TRUE)) %>%
   filter(date == max(date, na.rm = TRUE)) %>%
   pull(cases)
 
@@ -64,7 +62,6 @@ total_us_cases <- national %>%
 # most recent date in the dataset? Make sure to pull() this number
 # `total_us_deaths`
 total_us_deaths <- national %>%
-  filter(deaths == max(deaths, na.rm = TRUE)) %>%
   filter(date == max(date, na.rm = TRUE)) %>%
   pull(deaths)
 
